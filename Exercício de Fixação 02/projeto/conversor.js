@@ -13,9 +13,9 @@ class Conversor {
       }
 
     minutosParaHoras(minutos){
-        let minutos = horas / 60; 
-        return minutos;
+      let horas = minutos / 60;
+      return horas;
     }  
 }
 
-export { Conversor };
+module.exports = { Conversor };
