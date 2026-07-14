@@ -25,5 +25,5 @@ function consumoMedio(distancia,litros){
     return consumo;
 }
 
-  module.exports = { celsiusParaFahrenheit,horasParaMinutos,idadeEmDias,kmParaMetros,consumoMedio
+  module.exports = {celsiusParaFahrenheit,horasParaMinutos,idadeEmDias,kmParaMetros,consumoMedio
   };
