@@ -15,9 +15,12 @@ function idadeEmDias(idade){
     return Dias;
 }
 
+function kmParaMetros(km){
+    let Metros = km * 1000;
+    return Metros;
+}
 
 
 
-
-  module.exports = { celsiusParaFahrenheit,horasParaMinutos,idadeEmDias
+  module.exports = { celsiusParaFahrenheit,horasParaMinutos,idadeEmDias,kmParaMetros,
   };
