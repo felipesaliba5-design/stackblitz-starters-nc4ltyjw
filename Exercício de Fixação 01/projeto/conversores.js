@@ -20,7 +20,10 @@ function kmParaMetros(km){
     return Metros;
 }
 
+function consumoMedio(distancia,litros){
+    let consumo = distancia / litros;
+    return consumo;
+}
 
-
-  module.exports = { celsiusParaFahrenheit,horasParaMinutos,idadeEmDias,kmParaMetros,
+  module.exports = { celsiusParaFahrenheit,horasParaMinutos,idadeEmDias,kmParaMetros,consumoMedio
   };
