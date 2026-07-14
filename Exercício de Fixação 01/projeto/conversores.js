@@ -10,11 +10,14 @@ function horasParaMinutos(horas) {
     return minutos;
 }
 
+function idadeEmDias(idade){
+    let Dias = idade * 365;
+    return Dias;
+}
 
 
 
 
 
-
-  module.exports = { celsiusParaFahrenheit,horasParaMinutos
+  module.exports = { celsiusParaFahrenheit,horasParaMinutos,idadeEmDias
   };
