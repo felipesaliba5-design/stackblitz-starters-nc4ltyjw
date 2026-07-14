@@ -5,7 +5,16 @@ function celsiusParaFahrenheit(celsius) {
     return fahrenheit;
   }
 
+function horasParaMinutos(horas) {
+    let minutos = horas * 60; 
+    return minutos;
+}
 
-  module.exports = { 
-    celsiusParaFahrenheit
+
+
+
+
+
+
+  module.exports = { celsiusParaFahrenheit,horasParaMinutos
   };
