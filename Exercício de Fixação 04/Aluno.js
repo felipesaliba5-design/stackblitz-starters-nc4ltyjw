@@ -12,7 +12,7 @@ class Aluno extends Pessoa{
     }
 
     getMatricula (){
-        returnthis.#matricula;
+        return this.#matricula;
     }
 }
 module.exports = Aluno;
