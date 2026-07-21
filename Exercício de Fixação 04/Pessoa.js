@@ -10,13 +10,13 @@ class Pessoa{
         return false
     }
 
-    getName(){
+    getNome(){
         return this.#nome;
     }
 
-    setEmail(email){
-        if(email && email.trim()!==''){
-            this.#email = email;
+    setEmail(email) {
+        if (email && String(email).trim() !== '' && String(email).includes('@')) {
+            this.#email = String(email).trim();
             return true;
         }
         return false;
