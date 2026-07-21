@@ -17,7 +17,7 @@ class CarteiraDigital{
       depositar(valor) {
         if (valor > 0) {
           this.#saldo += valor;
-          console.log(`+ Depósito de R$ ${valor.toFixed(2)} realizado com sucesso!`);
+          console.log(`Depósito de R$ ${valor.toFixed(2)} realizado`);
         }
       }
 
@@ -27,11 +27,11 @@ class CarteiraDigital{
           return;
         }
         if (valor > this.#saldo) {
-        console.log(`Saldo insuficiente R$ ${valor.toFixed(2)}.`);
+        console.log(`Saldo insuficiente para saque de R$ ${valor.toFixed(2)} .`);
         } 
         else {
         this.#saldo -= valor;
-        console.log(`- Saque de R$ ${valor.toFixed(2)}`);
+        console.log(`Saque de R$ ${valor.toFixed(2)}`);
         }
       }
 
