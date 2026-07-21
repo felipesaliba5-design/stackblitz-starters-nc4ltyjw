@@ -3,9 +3,12 @@ const Pessoa = require('./Pessoa');
 class Aluno extends Pessoa{
     #matricula;
 
-    setMatricula (matricula){
-        if (matricula && String(matricula).trim()!==''){
-            this.#matricula = matricula;
+    setMatricula(matricula) {
+        
+        const matLimpa = String(matricula).trim();
+        
+        if (matLimpa !== '' && matLimpa.length >= 6) {
+            this.#matricula = matLimpa;
             return true;
         }
         return false;

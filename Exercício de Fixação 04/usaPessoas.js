@@ -55,3 +55,13 @@ console.log('Testando professor@escola.com:', testeEmail.setEmail('professor@esc
 
 console.log('Testando alunoemail.com:', testeEmail.setEmail('alunoemail.com') ? 'Válido' : 'Inválido');
 console.log('Testando professor.com:', testeEmail.setEmail('professor.com') ? 'Válido' : 'Inválido');
+
+console.log('\nDESAFIO 2');
+
+const testeMatricula = new Aluno();
+
+console.log('Testando matrícula 202601:', testeMatricula.setMatricula('202601') ? ' Válido' : ' Inválido');
+console.log('Testando matrícula 987654321:', testeMatricula.setMatricula('987654321') ? 'Válido' : ' Inválido');
+
+console.log('Testando matrícula 12345 :', testeMatricula.setMatricula('12345') ? 'Válido' : 'Inválido ');
+console.log('Testando matrícula 123 :', testeMatricula.setMatricula('123') ? ' Válido' : ' Inválido ')
