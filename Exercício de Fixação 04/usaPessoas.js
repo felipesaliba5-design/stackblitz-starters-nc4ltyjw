@@ -1,6 +1,7 @@
 const Pessoa = require('./Pessoa');
 const Aluno = require('./Aluno');
 const Professor = require('./Professor');
+const Coordenador = require('./Coordenador');
 
 console.log('\nTESTE 1');
 const p = new Pessoa();
@@ -65,3 +66,22 @@ console.log('Testando matrícula 987654321:', testeMatricula.setMatricula('98765
 
 console.log('Testando matrícula 12345 :', testeMatricula.setMatricula('12345') ? 'Válido' : 'Inválido ');
 console.log('Testando matrícula 123 :', testeMatricula.setMatricula('123') ? ' Válido' : ' Inválido ')
+
+console.log('\nDESAFIO AVANÇADO');
+
+const coord = new Coordenador();
+
+coord.setNome('Fernanda Souza');
+coord.setEmail('fernanda.coord@escola.com');
+
+coord.setDisciplina('Gestão Escolar');
+
+coord.setSetor('Ensino Médio');
+
+console.log(`Nome: ${coord.getNome()}`);
+console.log(`E-mail : ${coord.getEmail()}`);
+console.log(`Disciplina : ${coord.getDisciplina()}`);
+console.log(`Setor : ${coord.getSetor()}`);
+
+console.log('\nTestando validação de setor vazio:');
+if (!coord.setSetor('')) console.log('Setor não pode ser vazio');
