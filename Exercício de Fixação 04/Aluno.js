@@ -1,0 +1,18 @@
+const Pessoa = require('./Pessoa');
+
+class Aluno extends Pessoa{
+    #matricula;
+
+    setMatricula (matricula){
+        if (matricula && String(matricula).trim()!==''){
+            this.#matricula = matricula;
+            return true;
+        }
+        return false;
+    }
+
+    getMatricula (){
+        returnthis.#matricula;
+    }
+}
+module.exports = Aluno;
