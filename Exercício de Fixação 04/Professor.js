@@ -4,9 +4,9 @@ class Professor extends Pessoa{
 
     #disciplina
 
-    setDisciplina(diciplina){
-        if(diciplina && String(diciplina).trim()!==''){
-            this.#disciplina = matricula;
+    setDisciplina(disciplina){
+        if(disciplina && String(disciplina).trim()!==''){
+            this.#disciplina = disciplina;
             return true;
         }
         return false;
